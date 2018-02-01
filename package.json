@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "name": "new_portfolio",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -11,8 +11,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.15.4",
-    "nodemailer": "^4.1.2",
-    "path": "^0.12.7"
+    "express": "^4.15.4"
   }
 }

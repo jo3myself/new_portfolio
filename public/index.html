@@ -1,169 +1,317 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="en" class="full-height">
+
 <head>
-	<title>Johan's Page</title>
-	<!-- bootstrap css -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <!-- jquery -->
-    <script
-    src="https://code.jquery.com/jquery-3.2.1.min.js"
-    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
-    <!-- bootstrap pooper -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <!-- bootstrap javascript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-    <!-- css -->
-    <link rel="stylesheet" href="/css/style.css" type="text/css" />
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Johan Hartono</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Montserrat|Josefin+Sans" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MDB CSS -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
 </head>
+
 <body>
-	<nav class="navbar navbar-expand-md bg-white" id="top">
-	  <a class="navbar-brand" href="/">
-	  	<img class="img-fluid" id="logo" src="/images/jhlogo.jpg" alt="">
-	  </a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
-	  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-	    <div class="nav navbar-right">
-	      <a class="nav-link" href="#about">ABOUT</a>
-	      <a class="nav-link" href="#portfolio">PORTFOLIO</a>
-	      <a class="nav-link" href="#contact">CONTACT</a>
-	    </div>
-	  </div>
-	</nav> 
+   
+    <header>
 
-	<section class="bg-1 text-center">
-		<img src="/images/johan.jpg" class="img-fluid" id="photo">
-    	<h1 id="name">JOHAN HARTONO</h1>
-	</section>
-	
-	<div id="about"></div>
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12 col-sm-offset-1 text-center">
-				<br><br>
-				<h2>ABOUT ME</h2>
-				<hr>
-				<p id="about">
-					I am a Document Reviewer at American Red Cross. In addition to that role, I am also a Subject Matter Expert in my department and a part of software development adviser team. I am also taking a second job as an IT Contractor at Kahlon Inc. At American Red Cross I have been awarded for a strong track record as one of the highest performer in the last 6 years with zero problem.
-				</p>
-				<p id="about"> 
-					My colleagues describe me as puncual, honest and conscientious. I am a highly self-motivated and positive person who constantly strives to do my best at what I am doing and will endlessly raise the bar for any challenge put in front of me. I find that solving problems or learning new languages and frameworks give me a spark of excitement that naturally motivates me to keep pushing myself further. 
-				</p>
-			</div>	<!--/row-->   
-	    </div>   
-    	<hr>
-	</div>	<!--/container-->	
-
-	<div class="divider"></div>
-	
-		<section class="bg-2" id="portfolio">
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar elegant-color-dark lighten-2">
             <div class="container">
+                <a class="navbar-brand" href="/">
+                    <p class="logo"><strong>JH</strong></p>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#about">About Me
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#technologies">Technologies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>                      
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar end -->
 
-                <h2>PORTFOLIO</h2>
+        <!-- Intro Section -->
+        <div class="view" id="name">
+            <div class="full-bg-img">
+                <div class="container flex-center">
+                    <div class="row pt-5 mt-5">
+                        <div class="col-md-12">
+                            <div class="text-center">
+                                <h1 class="h1-reponsive white-text font-up font-bold mb-3 wow fadeInDown" data-wow-delay="0.3s">
+                                    <strong>Johan Hartono</strong>
+                                </h1>
+                                <hr class="hr-light mt-4 wow tada" data-wow-delay="0.4s">
+                                <h4 class="font-up mb-5 white-text wow fadeInUp" data-wow-delay="0.4s">
+                                    <strong>Web Developer</strong>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Intro end -->
+
+    </header>
+    
+    <!-- About Section -->
+    <div class="container" id="about">
+        <div class="text-center">
+            <h3 class="h1-reponsive font-up font-bold mb-3 wow">
+                <strong><i class="fa fa-heartbeat wow bounceInLeft" aria-hidden="true"></i> About Me <i class="fa fa-heartbeat wow bounceInRight" aria-hidden="true"></i></strong>
+            </h3>
+            <hr class="hr">
+            <div class="row justify-content-md-center">
+                <h5><i class="fa fa-hand-o-right" aria-hidden="true"></i> My mission is to build, create, and discover amazing web applications <i class="fa fa-hand-o-left" aria-hidden="true"></i></h5>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col-md-5 text">
+                    <p>Hi, I'm Johan Hartono, a front-end, back-end and full stack web developer. I reside in Orange County with my wonderful wife and two super active kids. On my spare time, I like to play in the park with my family, cook for them or play wrestling in the bed (of course one against three &#x1F601)</p>
+                    <p>My colleagues describe me as punctual, honest and conscientious. I am highly self-motivated and positive person who constantly strives to do my best at what I am doing and will always accept any challenge put in front of me. I find that solving problems or learning new languages and frameworks give me spark of excitement that naturally motivates me to keep pushing myself further. </p>          
+                </div>
+                <div class="col-md-3">
+                    <div class="border">
+                        <img class="img-fluid" src="./img/lprofile.jpg" alt="">
+                        <hr class="hr">
+                        <a href="https://www.linkedin.com/in/johan-hartono-274635139/" target="_new"><button type="button" class="btn btn-primary waves-effect" href='https://www.linkedin.com/in/johan-hartono-274635139/'>View Profile</button></a>
+                        <img class="img-fluid spacing" src="./img/lbutton.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <!-- About Section end -->
+
+    <!-- Technologies Section -->
+    <div class="stylish-color-dark" id="technologies">
+        <div class="container text-center">
+            <h3 class="h1-reponsive white-text font-up font-bold mb-3 wow extraSpacing">
+                <strong><i class="fa fa-cog fa-spin" aria-hidden="true"></i> Technologies <i class="fa fa-cog fa-spin" aria-hidden="true"></i></strong>
+            </h3>
+            <hr class="hr white-text">
+            <div class="row justify-content-md-center white-text">
+                <h5><i class="fa fa-hand-o-right" aria-hidden="true"></i> Big things have small beginnings <i class="fa fa-hand-o-left" aria-hidden="true"></i></h5>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col-md-8 paper wow zoomIn">
+                    <p class="font-up font-bold mb-3">Web Development</p>
+                    <p id="web"></p>
+                </div>
+                <div class="col-md-8 paper wow rollIn">
+                    <p class="font-up font-bold mb-3">Database</p>
+                    <p id="database"></p>
+                </div>
+                <div class="col-md-8 paper wow lightSpeedIn">
+                    <p class="font-up font-bold mb-3">Deployment</p>
+                    <p id="deployment"></p>
+                </div>
+                <div class="col-md-8 paper wow zoomInRight">
+                    <p class="font-up font-bold mb-3">Tools</p>
+                    <p id="tools"></p>
+                </div>
+            </div>
+        </div>             
+    </div>
+    <!-- Technologies Section end -->
+
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+            <div class="text-center">
+                <h3 class="h1-reponsive font-up font-bold mb-3 wow extraSpacing">
+                    <strong><i class="fa fa-picture-o" aria-hidden="true"></i> Portfolio <i class="fa fa-picture-o" aria-hidden="true"></i></strong>
+                </h3>
+                <hr class="hr">
+                <div class="row justify-content-md-center">
+                    <h5><i class="fa fa-hand-o-right" aria-hidden="true"></i> Stay positive, work hard and make it happen <i class="fa fa-hand-o-left" aria-hidden="true"></i></h5>
+                </div>
+                <div class="row my-5">
+                    <div class="col-lg-5 col-md-12 view hm-zoom overlay hm-stylish-strong wow rollIn">
+                        <a href="http://www.evitehub.com/" target="_new">
+                            <img src="./img/evite.jpg" class="img-fluid " alt="">
+                            <div class="mask flex-center">
+                                <p class="white-text font-bold">Check the site</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-md-12 my-4 mx-4 view hm-zoom overlay hm-stylish-strong wow fadeInUp text-justify">
+                        <p class="font-bold"> EviteHub - (MongoDB, Express, React, Node, Redux, Auth0, Mongoose) </p>
+                        <p>Take the hassle out of event planning. Plan your next event with us by using our easy to use event planner. The dashboard allows you to create multiple events, to do list and keep track of each event. Manage your guest list and track of who's RSVP'd, number of party and manage guest contact information. You also able to create your own invitation with our easy to use invitation maker and send it out to all your guests.</p>
+                    </div>
+                </div>
                 <hr>
-					<div class="row">
-						<div class="col-md-4">
-				            <div class="parent">
-				                <div class="child bgOne">
-				               		<a class="demo" href="http://www.evitehub.com/" target="_new" data-toggle="popover" data-placement="right" data-content="EviteHub (MongoDB, Express, React, Node, Redux, Auth0, Mongoose) Take the hassle out of event planning. Plan your next event with us by using our easy to use event planner. The dashboard allows you to create multiple events, to do list and keep track of each event. Manage your guest list and track of who's RSVP'd, number of party and manage guest contact information. You also able to create your own invitation with our easy to use invitation maker and send it out to all your guests.">EviteHub</a>
-				                </div>
-				            </div>
-						</div>
-						
-						<div class="col-md-4">
-							<div class="parent">
-								<div class="child bgTwo">
-									<a class="demo" href="https://enigmatic-oasis-88256.herokuapp.com/" target="_new" data-toggle="popover" data-placement="left" data-content="NYTREACT (MongoDB, Express, ReactJS, NodeJS)  is a search application for New York Times Article using React mounting lifecycle to query and display articles based on user searches.">NYTREACT</a>
-								</div>
-							</div>
-						</div>
+                <div class="row my-5">
+                    <div class="col-lg-6 col-md-12 my-4 mx-4 view hm-zoom overlay hm-stylish-strong wow fadeInUp text-justify">
+                        <p class="font-bold"> YellowStore - (mySQL, Sequelize, Express, NodeJS) </p>
+                        <p>This is an app that serves as a storefront to buy and sell goods. In this app, users can register to create their own “store” in a couple minutes. In this store, products can be added and those items are then displayed in their own storefront.</p>
+                    </div>
+                    <div class="col-lg-5 col-md-12 view hm-zoom overlay hm-stylish-strong wow rotateInDownRight">
+                        <a href="https://stormy-wave-49060.herokuapp.com/" target="_new">
+                            <img src="./img/yellow.jpg" class="img-fluid " alt="">
+                            <div class="mask flex-center">
+                                <p class="white-text font-bold">Check the site</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <hr>
+                <div class="row my-5">
+                    <div class="col-lg-5 col-md-12 view hm-zoom overlay hm-stylish-strong wow rollIn">
+                        <a href="https://jo3myself.github.io/iLoveMusic/" target="_new">
+                            <img src="./img/music.jpg" class="img-fluid " alt="">
+                            <div class="mask flex-center">
+                                <p class="white-text font-bold">Check the site</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-md-12 my-4 mx-4 view hm-zoom overlay hm-stylish-strong wow fadeInUp text-justify">
+                        <p class="font-bold"> iLoveMusic - (Firebase, JSON, API, AJAX) </p>
+                        <p>Your one stop shop for everything artist related, from upcoming shows, buying tickets to watching music videos or listening to their music on spotify or even browsing their social media feeds.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row my-5">
+                    <div class="col-lg-6 col-md-12 my-4 mx-4 view hm-zoom overlay hm-stylish-strong wow fadeInUp text-justify">
+                        <p class="font-bold"> NYTREACT - (MongoDB, Express, ReactJS, NodeJS) </p>
+                        <p>This is a search application for New York Times Article using React mounting lifecycle to query and display articles based on user searches.</p>
+                    </div>
+                    <div class="col-lg-5 col-md-12 view hm-zoom overlay hm-stylish-strong wow rotateInDownRight">
+                        <a href="https://enigmatic-oasis-88256.herokuapp.com/" target="_new">
+                            <img src="./img/nyc.jpg" class="img-fluid " alt="">
+                            <div class="mask flex-center">
+                                <p class="white-text font-bold">Check the site</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <hr>
+                <div class="row my-5">
+                    <div class="col-lg-5 col-md-12 view hm-zoom overlay hm-stylish-strong wow rollIn">
+                        <a href="https://damp-retreat-42808.herokuapp.com/" target="_new">
+                            <img src="./img/burger.jpg" class="img-fluid " alt="">
+                            <div class="mask flex-center">
+                                <p class="white-text font-bold">Check the site</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-md-12 my-4 mx-4 view hm-zoom overlay hm-stylish-strong wow fadeInUp text-justify">
+                        <p class="font-bold"> Eat-Da-Burger! - (MYSQL, ORM, Handlebars, NodeJS) </p>
+                        <p>This application is a restaurant app where you can order ANY KIND of burger you like... YES! any kind and as much as you like, then you can decide when you're going to eat it... but don't wait too long, anyone can eat it before you notice it!</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row my-5">
+                    <div class="col-lg-6 col-md-12 my-4 mx-4 view hm-zoom overlay hm-stylish-strong wow fadeInUp text-justify">
+                        <p class="font-bold"> TriviaGame - (JQuery, MomentJS, Bootstrap) </p>
+                        <p>You know this one... Go a head, challenge yourself to the next level!!!</p>
+                    </div>
+                    <div class="col-lg-5 col-md-12 view hm-zoom overlay hm-stylish-strong wow rotateInDownRight">
+                        <a href="https://jo3myself.github.io/triviagame/" target="_new">
+                            <img src="./img/trivia.jpg" class="img-fluid " alt="">
+                            <div class="mask flex-center">
+                                <p class="white-text font-bold">Check the site</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <hr>
+                <div class="row my-5">
+                    <div class="col-lg-5 col-md-12 view hm-zoom overlay hm-stylish-strong wow rollIn">
+                        <a href="https://jo3myself.github.io/giftastic/" target="_new">
+                            <img src="./img/giftastic.jpg" class="img-fluid " alt="">
+                            <div class="mask flex-center">
+                                <p class="white-text font-bold">Check the site</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-md-12 my-4 mx-4 view hm-zoom overlay hm-stylish-strong wow fadeInUp text-justify">
+                        <p class="font-bold"> GifTastic - (AJAX, API, JSON, Bootstrap) </p>
+                        <p>A dynamic web page that populates gifs of your choice from GIPHY API. When you have nothing to do and wanna see cool gifs... you are on the right site!</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row my-5">
+                    <div class="col-lg-6 col-md-12 my-4 mx-4 view hm-zoom overlay hm-stylish-strong wow fadeInUp text-justify">
+                        <p class="font-bold"> TechScraper - (MongoDB, Mongoose, Express, NodeJS) </p>
+                        <p>This is a web app that lets users view and leave comments on the latest deals. Everytime user visits the site, the app should scrape deals from Techbargains.com and display them on the site.</p>
+                    </div>
+                    <div class="col-lg-5 col-md-12 view hm-zoom overlay hm-stylish-strong wow rotateInDownRight">
+                        <a href="https://tranquil-fjord-91043.herokuapp.com/" target="_new">
+                            <img src="./img/tech.jpg" class="img-fluid " alt="">
+                            <div class="mask flex-center">
+                                <p class="white-text font-bold">Check the site</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Section end -->
 
-						<div class="col-md-4">
-							<div class="parent">
-								<div class="child bgThree">
-									<a class="demo" href="https://stormy-wave-49060.herokuapp.com/" target="_new" data-toggle="popover" data-placement="right" data-content="YellowStore (mySQL, Sequelize, Express, NodeJS) is an app that serves as a storefront to buy and sell goods. In this app, users can register to create their own “store” in a couple minutes. In this store, products can be added and those items are then displayed in their own storefront.">YellowStore</a>
-								</div>
-							</div>
-						</div>
+    <!--Footer-->
+    <footer class="page-footer center-on-small-only stylish-color-dark text-center" id="contact">
+        <a href="https://www.linkedin.com/in/johan-hartono-274635139/" target="_new" data-toggle="tooltip" data-placement="top" title="LinkedIn"><img class="social" src="./img/linkedinico.png"></a>
+        <span class="white-text font-bold social"><strong> hartono@myself.com </strong></span>
+        <a href="mailto:hartono@myself.com" data-toggle="tooltip" data-placement="top" title="Email"><img class="social" src="./img/emailico.png"></a>
+        <div class="footer-copyright">
+            <div class="containter-fluid">
+                © 2018 Copyright:
+                <a href="/"> Johan Hartono </a>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
+ 
+    <!-- SCRIPTS -->
 
-						<div class="col-md-4">
-							<div class="parent">
-								<div class="child bgFour">
-									<a class="demo" href="https://tranquil-fjord-91043.herokuapp.com/" target="_new" data-toggle="popover" data-placement="left" data-content="TechScraper (MongoDB, Mongoose, Express, NodeJS) is a web app that lets users view and leave comments on the latest deals. Everytime user visits the site, the app should scrape deals from Techbargains.com and display them on the site.">TechScraper</a>
-								</div>
-							</div>
-						</div>
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 
-				        <div class="col-md-4">
-				            <div class="parent">
-				                <div class="child bgFive">
-				               		<a class="demo" href="https://jo3myself.github.io/iLoveMusic/" target="_new" data-toggle="popover" data-placement="right" data-content="iLoveMusic (Firebase, JSON, API, AJAX) - your one stop shop for everything artist related, from upcoming shows, buying tickets to watching music videos or listening to their music on spotify or even browsing their social media feeds.">iLoveMusic</a>
-				                </div>
-				            </div>
-						</div>
-						
-						<div class="col-md-4">
-							<div class="parent">
-								<div class="child bgSix">
-									<a class="demo" href="https://damp-retreat-42808.herokuapp.com/" target="_new" data-toggle="popover" data-placement="left" data-content="Eat-Da-Burger! (MYSQL, ORM, Handlebars, NodeJS) is a restaurant app where you can order ANY KIND of burger you like... YES! any kind and as much as you like, then you can decide when you're going to eat it... but don't wait too long, anyone can eat it before you notice it!">EatDaBurger</a>
-								</div>
-							</div>
-						</div>
+    <!-- Bootstrap Pooper -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
 
-				        <div class="col-md-4">
-				            <div class="parent">
-				                <div class="child bgSeven">
-				                	<a class="demo" href="https://jo3myself.github.io/triviagame/" target="_new" data-toggle="popover" data-placement="left" data-content="TriviaGame (JQuery, MomentJS, Bootstrap) - You know this one... Go head, challenge yourself to the next level!!!">TriviaGame</a>
-				                </div>
-				            </div>
-				        </div>
+    <!-- Bootstrap JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
-				        <div class="col-md-4">
-				            <div class="parent">
-				                <div class="child bgEight">
-				                	<a class="demo" href="https://jo3myself.github.io/giftastic/" target="_new" data-toggle="popover" data-placement="right" data-content="GifTastic (AJAX, API, JSON, Bootstrap) is a dynamic web page that populates gifs of your choice from GIPHY API. When you have nothing to do and wanna see cool gifs... you are on the right site!">GifTastic</a>
-				                </div>
-				            </div>
-				        </div>      
-				    </div>	<!--/row-->  
-                    
-            </div>	<!--/container-->           
-            <hr>         
-		</section>
+    <!-- MDB JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
 
-	<div class="divider" id="contact"></div>
-	<div class="container">
-	    <div class="row justify-content-md-center">
-	    	<div class="col-6">
-		    	<h2>CONTACT</h2>
-		    	<hr>
-		    	<span id="about">
-		    		<a href="https://www.linkedin.com/in/johan-hartono-274635139/" target="_new" data-toggle="tooltip" data-placement="top" title="LinkedIn"><img class="social" src="/images/linkedinIcon.png"></a>
-		    		<a href="https://www.facebook.com/johan.hartono.7" target="_new" data-toggle="tooltip" data-placement="top" title="Facebook"><img class="social" src="/images/fbIcon.png"></a>
-		    		<a href="mailto:hartono@myself.com" data-toggle="tooltip" data-placement="top" title="Email"><img class="social" src="/images/emailIcon.png"></a>
-					<label>hartono@myself.com</label>
-		    	</span>
-		    	<hr>
-		    	
-	        </div>
-		</div>	<!--/row-->
-	</div>	<!--/container-->
-	
-	
-	<div class="divider"></div>
+    <!-- JavaScript -->
+    <script type="text/javascript" src="js/app.js"></script>
 
-	<section class="bg-3 text-center">
-	    <h1>THANK YOU</h1>
-	    <a class="nav-link" href="#top">Back to TOP</a>
-	</section>
-
-	<footer>
-        <h5 class="text-muted">&#119973;&#8459; Johan Hartono</h5>
-	</footer>
-
-	<script type="text/javascript" src="/js/javascript.js"></script>
 </body>
+
 </html>
