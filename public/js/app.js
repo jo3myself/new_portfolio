@@ -1,9 +1,9 @@
 new WOW().init()
 
 const skills = {
-  web: ['React.js', 'Redux', 'HTML', 'CSS', 'JavaScript', 'jQuery', 'C#', 'ASP.NET', 'Responsive Design', 'Bootstrap', 'Material UI', 'Handlebars.js', 'Express.js', 'Node.js', 'AJAX', 'APIs', 'MVC'],
-  database: ['MySQL', 'MongoDB', 'SQL Server', 'Firebase', 'Ms Access'],
-  deployment: ['GIT', 'Heroku'],
+  web: ['Javascript', 'React', 'Redux', 'Angular', 'Handlebars', 'JQuery', 'HTML', 'CSS', 'Bootstrap', 'TypeScript', 'C#', 'ASP.NET', 'REST API', 'Node', 'Express'],
+  database: ['MySQL', 'SQL Server', 'MongoDB', 'Firebase', 'Ms Access'],
+  deployment: ['Git', 'Heroku'],
   tools: ['Sublime', 'Visual Studio', 'Photoshop', 'Notepad']
 }
 
@@ -34,3 +34,17 @@ for (let w = 0; w < skills.tools.length; w++) {
   skill.append('<i class="fa fa-gavel"></i> ' + skills.tools[w])
   $('#tools').append(skill)
 }
+
+// send the email
+let to,subject,text;
+$("#sendEmail").click(function(){      
+	to='hartono@myself.com';
+	subject="Webmail - " + $("#contactName").val() + " - " + $("#contactEmail").val();
+	text=$("#contactContent").val();
+	$.get("https://app-tetes.herokuapp.com/send",{to:to,subject:subject,text:text},function(data){
+	if(data=="sent") {
+    $('.email').val("");
+    alert("Your message has been sent!")
+	}
+	});
+});
