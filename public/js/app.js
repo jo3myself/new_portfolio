@@ -41,7 +41,7 @@ $("#sendEmail").click(function(){
 	to='hartono@myself.com';
 	subject="Webmail - " + $("#contactName").val() + " - " + $("#contactEmail").val();
 	text=$("#contactContent").val();
-	$.get("https://app-tetes.herokuapp.com/send",{to:to,subject:subject,text:text},function(data){
+	$.get("https://johan-hartono.herokuapp.com/send",{to:to,subject:subject,text:text},function(data){
 	if(data=="sent") {
     $('.email').val("");
     alert("Your message has been sent!")
