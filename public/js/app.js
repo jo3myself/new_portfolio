@@ -1,6 +1,6 @@
 const skills = {
-  tech: [{ name: 'Javascript', no: '70%' }, { name: 'HTML, CSS', no: '70%' }, { name: 'Redux', no: '50%' }, { name: 'TypeScript', no: '60%' }, { name: 'Bootstrap', no: '70%' }, { name: 'C#, ASP.NET', no: '50%' }],
-  framework: [{ name: 'React', no: '70%' }, { name: 'Angular 2', no: '60%' }, { name: 'Handlebars', no: '70%' }, { name: 'JQuery', no: '70%' }],
+  tech: [{ name: 'Javascript', no: '70%' }, { name: 'HTML, CSS (SCSS, Sass)', no: '70%' }, { name: 'Redux', no: '50%' }, { name: 'TypeScript', no: '60%' }, { name: 'Bootstrap', no: '70%' }, { name: 'C#, ASP.NET', no: '50%' }],
+  framework: [{ name: 'React', no: '70%' }, { name: 'React Native', no: '70%' }, { name: 'Angular 2', no: '60%' }, { name: 'Handlebars', no: '70%' }, { name: 'JQuery', no: '70%' }],
   database: [{ name: 'MySQL', no: '70%' }, { name: 'SQL Server', no: '70%' }, { name: 'MongoDB', no: '70%' }, { name: 'Firebase', no: '50%' }, { name: 'Ms Access', no: '70%' }],
   other: [{ name: 'Git', no: '70%' }, { name: 'Heroku', no: '70%' }, { name: 'REST API', no: '70%' }, { name: 'AJAX', no: '70%' }, { name: 'Node', no: '60%' }, { name: 'Express', no: '60%' }]
 }
